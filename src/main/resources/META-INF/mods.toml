@@ -1,0 +1,34 @@
+modLoader = "javafml"
+loaderVersion = "[36,)"
+license = "MPL-2.0"
+issueTrackerURL = "https://github.com/zhilizhan/BHTPvZ/issues"
+
+[[mods]]
+modId = "bhtpvz"
+version = "${version}"
+displayName = "${mod_name}"
+authors = "${mod_authors}"
+credits = "\nArtist: GrassCarp, DLlover, Echoes_ACT\nData Pack: 136"
+logoFile = "logo.png"
+description = 'This is an add-on mod about "HTPVZ Mod" version 1.16.5'
+
+[[dependencies.bhtpvz]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[${minecraft_version},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bhtpvz]]
+modId = "forge"
+mandatory = true
+versionRange = "[${forge_version},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bhtpvz]]
+modId = "pvz"
+mandatory = true
+versionRange = "[${pvz_version},)"
+ordering = "NONE"
+side = "BOTH"

@@ -1,0 +1,11 @@
+{
+  "buzzer": {
+    "subtitle": "sound.bhtpvz.buzzer",
+    "sounds": [
+      {
+        "name": "bhtpvz:buzzer",
+        "stream": true
+      }
+    ]
+  }
+}

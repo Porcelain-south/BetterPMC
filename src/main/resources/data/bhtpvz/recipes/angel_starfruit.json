@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "pvz:amethyst_ingot"
+    },
+    "B": {
+      "item": "minecraft:dragon_breath"
+    },
+    "C": {
+      "item": "bhtpvz:starfruit"
+    }
+  },
+  "result": {
+    "item": "bhtpvz:angel_starfruit"
+  }
+}

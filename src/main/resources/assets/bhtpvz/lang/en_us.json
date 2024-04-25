@@ -1,0 +1,104 @@
+{
+  "itemGroup.better_hung_teen_plants_vs_zombies": "Better Hung_Teen's Plants vs Zombies  MOD",
+
+  "biome.bhtpvz.night_biome": "night biome",
+  "biome.bhtpvz.bewilder_garden": "bewilder garden biome",
+
+  "item.bhtpvz.better_hung_teen_plants_vs_zombies": "Better Hung_Teen's Plants vs Zombies",
+  "item.bhtpvz.cherry": "cherry",
+  "item.bhtpvz.starfruit": "starfruit",
+  "item.bhtpvz.angel_starfruit": "angel starfruit",
+  "item.bhtpvz.squash_slice": "squash slice",
+  "item.bhtpvz.ice_cabbage": "ice cabbage",
+  "item.bhtpvz.origin_spore": "origin spore",
+  "item.bhtpvz.hammer": "hammer",
+  "item.bhtpvz.origin_helmet": "origin helmet",
+  "item.bhtpvz.origin_chestplate": "origin chestplate",
+  "item.bhtpvz.origin_leggings": "origin leggings",
+  "item.bhtpvz.origin_boots": "origin boots",
+  "item.bhtpvz.damson_crystal_sword": "damson crystal sword",
+  "item.bhtpvz.damson_crystal_shovel": "damson crystal shovel",
+  "item.bhtpvz.damson_crystal_pickaxe": "damson crystal pickaxe",
+  "item.bhtpvz.damson_crystal_axe": "damson crystal axe",
+  "item.bhtpvz.damson_crystal_hoe": "damson crystal hoe",
+  "item.bhtpvz.damson_crystal_helmet": "damson crystal helmet",
+  "item.bhtpvz.damson_crystal_chestplate": "damson crystal chestplate",
+  "item.bhtpvz.damson_crystal_leggings": "damson crystal leggings",
+  "item.bhtpvz.damson_crystal_boots": "damson crystal boots",
+  "item.bhtpvz.morion_ingot": "morion ingot",
+  "item.bhtpvz.butter":"butter",
+  "item.bhtpvz.damson_crystal_ingot": "damson crystal ingot",
+  "item.bhtpvz.xp_sapling": "xp sapling",
+  "item.bhtpvz.wisdom_sapling": "wisdom sapling",
+  "item.bhtpvz.dave_token": "dave token",
+  "item.bhtpvz.sun_dave_token": "sun dave token",
+  "item.bhtpvz.steel_pumpkin_token": "steel pumpkin token",
+  "item.bhtpvz.steel_coin": "steel coin",
+  "item.bhtpvz.chlorophyll": "chlorophyll",
+  "item.bhtpvz.dt_cherry_speed": "cherry speed",
+  "item.bhtpvz.dt_starfruit_speed": "starfruit speed",
+
+  "item.bhtpvz.grass_carp_card": "grass carp pult card",
+  "item.bhtpvz.grass_carp_enjoy_card": "grass carp pult enjoy card",
+
+
+  "item.bhtpvz.origin_moob_spawn_egg": "origin moob spawn egg",
+
+
+  "block.bhtpvz.cherry_leaves": "cherry leaves",
+  "block.bhtpvz.starfruit_leaves": "starfruit leaves",
+  "block.bhtpvz.cherry_sapling": "cherry sapling",
+  "block.bhtpvz.starfruit_sapling": "starfruit sapling",
+  "block.bhtpvz.origin_mushroom": "origin mushroom",
+  "block.bhtpvz.origin_mushroom_block": "origin mushroom block",
+  "block.bhtpvz.question_mark_pot": "question mark pot",
+  "block.bhtpvz.plant_pot": "plant pot",
+  "block.bhtpvz.squash": "squash",
+  "block.bhtpvz.morion_ore": "morion ore",
+  "block.bhtpvz.morion_block": "morion block",
+  "block.bhtpvz.damson_crystal_block": "damson crystal block",
+  "block.bhtpvz.chili": "chili seeds",
+  "block.bhtpvz.garlic": "garlic",
+  "block.bhtpvz.decomposition_stage": "decomposition stage",
+  "block.bhtpvz.steel_pumpkin": "steel pumpkin",
+  "block.bhtpvz.water_pot": "waterPot",
+  "block.bhtpvz.screen_door": "screenDoor",
+  "block.bhtpvz.wisdom_log": "wisdomLog",
+  "block.bhtpvz.pot_grass": "potGrass",
+  "block.bhtpvz.chinaware_flower_pot": "ChinawareFlowerPot",
+  "advancements.chinaware_flower_pot.title": "Chinaware Killer",
+  "advancements.chinaware_flower_pot.descr": "Use a hammer to break a ChinawareFlowerPot",
+
+  "effect.bhtpvz.halitosis": "halitosis",
+
+  "tooltip.bhtpvz.xp_sapling.use": "Eat to gain little experience",
+  "tooltip.bhtpvz.wisdom_sapling.use": "Eat to gain many experience",
+  "tooltip.bhtpvz.token.use": "Use to summon dave",
+  "tooltip.bhtpvz.sun_token.use": "Use to summon sunDave",
+  "tooltip.bhtpvz.steel_pumpkin_token.use": "Use to summon steelPumpkin",
+  "tooltip.bhtpvz.steel_coin.use": "Use to chance number+3",
+  "tooltip.bhtpvz.chlorophyll.use": "Eat to gain energy",
+  "tooltip.bhtpvz.hammer.use": "Right hammer zombies or pot",
+
+
+  "entity.bhtpvz.origin_moob": "origin moob",
+
+
+  "entity.bhtpvz.grass_carp": "grass carp",
+
+  "skill.pvz.grass_carp_heal_speed": "faster heal amount",
+  "skill.pvz.grass_carp_heal_speed.desc": "Plants will have more heal amount",
+  "skill.pvz.grass_carp_heal_rage": "bigger heal rage",
+  "skill.pvz.grass_carp_heal_rage.desc": "Plants will have bigger heal rage",
+  "skill.pvz.grass_carp_more_health": "more health",
+  "skill.pvz.grass_carp_more_health.desc": "Plants will have more health",
+
+
+  "challenge.bhttpvz.extra.msg1": "Additional challenges of bhttpvz",
+  "challenge.pvz.roof_extra.name": "Roof Extra",
+  "challenge.pvz.grass_add.name": "Grass Add",
+  "challenge.pvz.pool_add.name": "Pool Add",
+
+
+  "sound.bhtpvz.buzzer": "Buzzer"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "bhtpvz:block/starfruit_sapling"
+  }
+}

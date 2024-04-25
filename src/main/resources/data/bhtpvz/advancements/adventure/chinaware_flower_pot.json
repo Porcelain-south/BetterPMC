@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "bhtpvz:hammer"
+    },
+    "title": {
+      "translate": "advancements.chinaware_flower_pot.title"
+    },
+    "description": {
+      "translate": "advancements.chinaware_flower_pot.descr"
+    },
+    "frame": "challenge",
+    "background": "bhtpvz:textures/block/damson_crystal_block.png",
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "chinaware_flower_pot": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 3000
+  }
+}

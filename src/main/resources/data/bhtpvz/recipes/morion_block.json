@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "bhtpvz:morion_ingot"
+    }
+  },
+  "result": {
+    "item": "bhtpvz:morion_block"
+  }
+}

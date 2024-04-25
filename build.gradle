@@ -1,0 +1,103 @@
+plugins {
+    id "dev.architectury.loom"
+    id "maven-publish"
+}
+
+loom {
+    forge {
+        dataGen {
+            mod project.mod_id
+        }
+    }
+
+    launches {
+        data {
+            arg "--existing", file("src/main/resources").absolutePath
+        }
+    }
+    forge {
+        mixinConfig "mixin.bhtpvz.json"
+    }
+}
+
+repositories {
+    maven {
+        name "CurseMaven"
+        url "https://cursemaven.com"
+    }
+    maven {
+        name "Parchment"
+        url "https://maven.parchmentmc.org"
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings loom.layered() {
+        officialMojangMappings()
+        parchment "org.parchmentmc.data:parchment-${project.minecraft_version}:${project.parchment_version}@zip"
+    }
+
+    forge "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
+
+    modImplementation "curse.maven:pvz-${project.pvz_id}:${project.pvz_file_id}"
+    modImplementation("curse.maven:mowziesmobs-250498:4120133")//Mowzie's Mobs
+    modImplementation("curse.maven:gek-388172:4182600")//壁虎库
+}
+
+processResources {
+    Map<String, String> properties = new HashMap<>()
+
+    properties.put "version", project.version
+    properties.put "mod_id", project.mod_id
+    properties.put "mod_name", project.mod_name
+    properties.put "mod_authors", project.mod_authors
+    properties.put "minecraft_version", project.minecraft_version
+    properties.put "forge_version", project.forge_version
+    properties.put "pvz_version", project.pvz_version
+
+    properties.forEach (k, v) -> inputs.property k, v
+
+    filesMatching("META-INF/mods.toml") {
+        expand properties
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding "UTF-8"
+}
+
+java {
+    withSourcesJar()
+    toolchain {
+        languageVersion = JavaLanguageVersion.of 8
+    }
+}
+
+jar {
+    archivesBaseName = project.mod_id
+    from("LICENSE") {
+        rename {
+            "${it}_${project.mod_id}"
+        }
+    }
+    manifest {
+        attributes([
+                "Specification-Title": project.mod_name,
+                "Specification-Vendor": project.mod_authors,
+                "Specification-Version": "1",
+                "Implementation-Title": project.mod_name,
+                "Implementation-Version": project.version,
+                "Implementation-Vendor": project.mod_id,
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}

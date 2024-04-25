@@ -1,0 +1,22 @@
+{
+   "type": "minecraft:crafting_shaped",
+      "pattern":
+      [ " A ",
+        " B ",
+        "   "],
+
+      "key": {
+        "A": {
+          "item": "minecraft:water_bucket"
+        },
+        "B": {
+          "item": "minecraft:flower_pot"
+        }
+
+    },
+
+      "result": {
+        "item": "bhtpvz:water_pot",
+        "count": 1
+      }
+    }

@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "bhtpvz:block/garlic_0"
+  }
+}

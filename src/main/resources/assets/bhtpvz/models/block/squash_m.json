@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "bhtpvz:block/squash_top",
+    "side": "bhtpvz:block/squash_side"
+  }
+}

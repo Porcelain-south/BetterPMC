@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+      "item": "bhtpvz:morion_ore"
+    },
+  "result": "bhtpvz:morion_ingot",
+  "experience": 1.4,
+  "cookingtime": 250
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "bhtpvz:block/starfruit_leaves"
+  }
+}

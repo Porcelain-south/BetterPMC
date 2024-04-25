@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "bhtpvz:block/decomposition_stage_side",
+    "north": "bhtpvz:block/decomposition_stage_side",
+    "south": "bhtpvz:block/decomposition_stage_side",
+    "east": "bhtpvz:block/decomposition_stage_side",
+    "west": "bhtpvz:block/decomposition_stage_side",
+    "up": "bhtpvz:block/decomposition_stage_top",
+    "down": "bhtpvz:block/decomposition_stage_bottom"
+  }
+}

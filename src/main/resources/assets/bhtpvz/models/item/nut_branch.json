@@ -1,0 +1,7 @@
+{
+  "parent": "dynamictrees:item/branch",
+  "textures": {
+    "bark": "pvz:block/nut_log",
+    "rings": "pvz:block/nut_log_top"
+  }
+}

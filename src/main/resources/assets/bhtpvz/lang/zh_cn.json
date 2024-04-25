@@ -1,0 +1,104 @@
+{
+  "itemGroup.better_hung_teen_plants_vs_zombies": "更好的PMC",
+
+
+  "item.bhtpvz.better_hung_teen_plants_vs_zombies": "更好的PMC",
+  "item.bhtpvz.cherry": "樱桃",
+  "item.bhtpvz.starfruit": "杨桃",
+  "item.bhtpvz.angel_starfruit": "天使杨桃",
+  "item.bhtpvz.squash_slice": "倭瓜片",
+  "item.bhtpvz.ice_cabbage": "冰卷心菜",
+  "item.bhtpvz.origin_spore": "原始孢子",
+  "item.bhtpvz.hammer": "锤子",
+  "item.bhtpvz.origin_helmet": "原始精华头盔",
+  "item.bhtpvz.origin_chestplate": "原始精华胸甲",
+  "item.bhtpvz.origin_leggings": "原始精华护腿",
+  "item.bhtpvz.origin_boots": "原始精华靴子",
+  "item.bhtpvz.damson_crystal_sword": "暗紫合晶剑",
+  "item.bhtpvz.damson_crystal_shovel": "暗紫合晶铲",
+  "item.bhtpvz.damson_crystal_pickaxe": "暗紫合晶镐",
+  "item.bhtpvz.damson_crystal_axe": "暗紫合晶斧",
+  "item.bhtpvz.damson_crystal_hoe": "暗紫合晶锄",
+  "item.bhtpvz.damson_crystal_helmet": "暗紫合晶头盔",
+  "item.bhtpvz.damson_crystal_chestplate": "暗紫合晶胸甲",
+  "item.bhtpvz.damson_crystal_leggings": "暗紫合晶护腿",
+  "item.bhtpvz.damson_crystal_boots": "暗紫合晶靴子",
+  "item.bhtpvz.morion_ingot": "黑晶锭",
+  "item.bhtpvz.butter": "黄油",
+  "item.bhtpvz.damson_crystal_ingot": "暗紫合晶锭",
+  "item.bhtpvz.xp_sapling": "经验树苗",
+  "item.bhtpvz.wisdom_sapling": "智慧树苗",
+  "item.bhtpvz.dave_token": "戴夫标志",
+  "item.bhtpvz.sun_dave_token": "阳光戴夫标志",
+  "item.bhtpvz.steel_pumpkin_token": "钢南瓜标志",
+  "item.bhtpvz.steel_coin": "钢镚",
+  "item.bhtpvz.chlorophyll": "叶绿素",
+  "item.bhtpvz.dt_cherry_speed": "樱桃树种子",
+  "item.bhtpvz.dt_starfruit_speed": "杨桃树种子",
+
+
+  "item.bhtpvz.grass_carp_card": "草鱼卡",
+  "item.bhtpvz.grass_carp_enjoy_card": "草鱼体验卡",
+
+
+  "item.bhtpvz.origin_moob_spawn_egg": "起源蘑菇牛刷怪蛋",
+
+
+
+  "block.bhtpvz.cherry_leaves": "樱桃树树叶",
+  "block.bhtpvz.starfruit_leaves":"杨桃树树叶",
+  "block.bhtpvz.cherry_sapling": "樱桃树树苗",
+  "block.bhtpvz.starfruit_sapling": "杨桃树树苗",
+  "block.bhtpvz.origin_mushroom": "原始蘑菇",
+  "block.bhtpvz.origin_mushroom_block": "原始蘑菇块",
+  "block.bhtpvz.question_mark_pot": "问号罐",
+  "block.bhtpvz.plant_pot": "植物罐",
+  "block.bhtpvz.squash": "倭瓜",
+  "block.bhtpvz.morion_ore": "黑晶矿",
+  "block.bhtpvz.morion_block": "黑晶块",
+  "block.bhtpvz.damson_crystal_block": "暗紫合晶块",
+  "block.bhtpvz.chili": "辣椒种子",
+  "block.bhtpvz.garlic": "大蒜",
+  "block.bhtpvz.decomposition_stage": "分解台",
+  "block.bhtpvz.steel_pumpkin": "钢南瓜",
+  "block.bhtpvz.water_pot": "水盆",
+  "block.bhtpvz.screen_door": "钢门",
+  "block.bhtpvz.wisdom_log": "智慧木",
+  "block.bhtpvz.pot_grass": "罐子草",
+  "block.bhtpvz.chinaware_flower_pot": "青花瓷花盆",
+  "advancements.chinaware_flower_pot.title": "青花瓷杀手",
+  "advancements.chinaware_flower_pot.descr": "用锤子砸碎一个青花瓷花盆",
+
+  "effect.bhtpvz.halitosis": "口臭",
+
+  "tooltip.bhtpvz.xp_sapling.use": "食用以获得少量智慧树之力",
+  "tooltip.bhtpvz.wisdom_sapling.use": "食用以获得大量智慧树之力",
+  "tooltip.bhtpvz.steel_coin.use": "使用后抽奖次数+3",
+  "tooltip.bhtpvz.token.use": "使用以召唤戴夫",
+  "tooltip.bhtpvz.sun_token.use": "使用以召唤阳光戴夫",
+  "tooltip.bhtpvz.steel_pumpkin_token.use": "使用以召唤钢南瓜",
+  "tooltip.bhtpvz.chlorophyll.use": "食用以获得能量",
+  "tooltip.bhtpvz.hammer.use": "右击锤僵尸或罐子",
+
+
+  "entity.bhtpvz.origin_moob": "起源蘑菇牛",
+
+
+  "entity.bhtpvz.grass_carp": "草鱼",
+
+
+  "skill.pvz.grass_carp_heal_speed": "更快疗愈",
+  "skill.pvz.grass_carp_heal_speed.desc": "缩短释放治愈气体的时间间隔",
+  "skill.pvz.grass_carp_heal_rage": "吐息扩散",
+  "skill.pvz.grass_carp_heal_rage.desc": "增加治愈气体的喷吐范围",
+  "skill.pvz.grass_carp_more_health": "生生不息",
+  "skill.pvz.grass_carp_more_health.desc": "增加草鱼的生命值",
+
+
+  "challenge.bhttpvz.extra.msg1": "BHtpvz的附加挑战",
+  "challenge.pvz.roof_extra.name": "屋顶附加",
+  "challenge.pvz.grass_add.name": "草坪附加",
+  "challenge.pvz.pool_add.name": "泳池附加",
+  "sound.bhtpvz.buzzer": "挥动锤子声"
+
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "A A",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "item": "pvz:origin_ingot"
+    }
+  },
+  "result": {
+    "item": "bhtpvz:origin_leggings"
+  }
+}
