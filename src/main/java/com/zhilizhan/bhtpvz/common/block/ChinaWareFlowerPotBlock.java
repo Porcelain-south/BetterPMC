@@ -3,11 +3,8 @@ import com.hungteen.pvz.common.block.special.FlowerPotBlock;
 import com.hungteen.pvz.common.misc.sound.SoundRegister;
 import com.zhilizhan.bhtpvz.common.item.BHTPvZItems;
 import com.zhilizhan.bhtpvz.common.sound.BHTPvZSound;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.sounds.SimpleSoundInstance;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -17,7 +14,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 
 public class ChinaWareFlowerPotBlock extends FlowerPotBlock {
-    private final Minecraft minecraft = Minecraft.getInstance();
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand handIn, BlockHitResult hit) {
         if (!level.isClientSide && player.getMainHandItem().getItem()== BHTPvZItems.HAMMER.get()) {
             //移除方块
@@ -43,9 +39,4 @@ public class ChinaWareFlowerPotBlock extends FlowerPotBlock {
         }
         return InteractionResult.PASS;
     }
-    public void playDelaySound(double x, double y, double z, SoundEvent sound, SoundSource category, float volume, float pitch) {
-        SimpleSoundInstance simplesound = new SimpleSoundInstance(sound, category, volume, pitch, x, y, z);
-        this.minecraft.getSoundManager().playDelayed(simplesound, (int)(10.0));
-    }
-
 }
