@@ -1,7 +1,6 @@
 package com.zhilizhan.bhtpvz.common.item.token;
 
 import com.hungteen.pvz.common.entity.EntityRegister;
-import com.hungteen.pvz.common.entity.npc.AbstractDaveEntity;
 import com.hungteen.pvz.common.entity.npc.SunDaveEntity;
 import com.hungteen.pvz.utils.EntityUtil;
 import net.minecraft.ChatFormatting;
@@ -31,10 +30,12 @@ public class SunDaveToken extends Item {
         Level level = context.getLevel();
         BlockPos pos = context.getClickedPos();
         ItemStack stack = context.getItemInHand();
-        if (!level.isClientSide && !player.getCooldowns().isOnCooldown(this) && context.getClickedFace() == Direction.UP) {
+        if (!level.isClientSide && player != null && !player.getCooldowns().isOnCooldown(this) && context.getClickedFace() == Direction.UP) {
             if (getDaveCount(player) < 1) {
                 SunDaveEntity dave = EntityRegister.SUN_DAVE.get().create(level);
-                EntityUtil.onEntitySpawn(level, dave, pos.above());
+                if (dave != null) {
+                    EntityUtil.onEntitySpawn(level, dave, pos.above());
+                }
                 stack.shrink(1);
             }
         }
@@ -43,7 +44,7 @@ public class SunDaveToken extends Item {
 
     public int getDaveCount(Player player) {
         final int range = 120;
-        final long count = EntityUtil.getFriendlyLivings(player, EntityUtil.getEntityAABB(player, range, range)).stream().filter(entity -> entity instanceof AbstractDaveEntity).count();
+        final long count = EntityUtil.getFriendlyLivings(player, EntityUtil.getEntityAABB(player, range, range)).stream().filter(entity -> entity instanceof SunDaveEntity).count();
         return (int)count;
     }
 

@@ -2,7 +2,7 @@
   "required": true,
   "package": "com.zhilizhan.bhtpvz.common.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "bhtpvz.refmap.json",
+  "refmap": "BetterPMC-refmap.json",
   "mixins": [
     "EntityWroughtnautMixin",
     "PlantCardItemMixin",

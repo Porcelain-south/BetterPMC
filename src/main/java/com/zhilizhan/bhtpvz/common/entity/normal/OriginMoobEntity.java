@@ -52,32 +52,34 @@ public class OriginMoobEntity extends Cow implements IForgeShearable {
 
 
     public List<ItemStack> onSheared(@Nullable Player player, @Nonnull ItemStack item, Level world, BlockPos pos, int fortune) {
-        world.playSound((Player)null, this, SoundEvents.MOOSHROOM_SHEAR, player == null ? SoundSource.BLOCKS : SoundSource.PLAYERS, 1.0F, 1.0F);
+        world.playSound(null, this, SoundEvents.MOOSHROOM_SHEAR, player == null ? SoundSource.BLOCKS : SoundSource.PLAYERS, 1.0F, 1.0F);
         if (world.isClientSide() || this.isBaby()) {
             return Collections.emptyList();
         } else {
             ((ServerLevel)this.level).sendParticles(ParticleTypes.EXPLOSION, this.getX(), this.getY(0.5), this.getZ(), 1, 0.0, 0.0, 0.0, 0.0);
             this.remove();
             Cow cowentity = EntityType.COW.create(this.level);
-            cowentity.moveTo(this.getX(), this.getY(), this.getZ(), this.yRot, this.xRot);
-            cowentity.setHealth(this.getHealth());
-            cowentity.yBodyRot = this.yBodyRot;
-            if (this.hasCustomName()) {
-                cowentity.setCustomName(this.getCustomName());
-                cowentity.setCustomNameVisible(this.isCustomNameVisible());
-            }
+            if (cowentity != null) {
+                cowentity.moveTo(this.getX(), this.getY(), this.getZ(), this.yRot, this.xRot);
+                cowentity.setHealth(this.getHealth());
+                cowentity.yBodyRot = this.yBodyRot;
+                if (this.hasCustomName()) {
+                    cowentity.setCustomName(this.getCustomName());
+                    cowentity.setCustomNameVisible(this.isCustomNameVisible());
+                }
 
-            if (this.isPersistenceRequired()) {
-                cowentity.setPersistenceRequired();
-            }
+                if (this.isPersistenceRequired()) {
+                    cowentity.setPersistenceRequired();
+                }
 
-            cowentity.setInvulnerable(this.isInvulnerable());
+                cowentity.setInvulnerable(this.isInvulnerable());
+            }
             this.level.addFreshEntity(cowentity);
             List<ItemStack> items = new ArrayList<>();
 
             for(int i = 0; i < 3; ++i) {
                 items.add(new ItemStack(BHTPvZItems.ORIGIN_MUSHROOM.get()));
-                if(Math.random()<0.02f)items.add(new ItemStack(BHTPvZItems.CHLOROPHYLL.get()));
+                if(Math.random()<0.1f)items.add(new ItemStack(BHTPvZItems.CHLOROPHYLL.get()));
             }
 
             return items;

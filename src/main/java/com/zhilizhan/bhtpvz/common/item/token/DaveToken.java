@@ -1,7 +1,6 @@
 package com.zhilizhan.bhtpvz.common.item.token;
 
 import com.hungteen.pvz.common.entity.EntityRegister;
-import com.hungteen.pvz.common.entity.npc.AbstractDaveEntity;
 import com.hungteen.pvz.common.entity.npc.CrazyDaveEntity;
 import com.hungteen.pvz.utils.EntityUtil;
 import net.minecraft.ChatFormatting;
@@ -32,10 +31,12 @@ public class DaveToken extends Item {
         Level level = context.getLevel();
         BlockPos pos = context.getClickedPos();
         ItemStack itemstack = context.getItemInHand();
-        if (!level.isClientSide && !player.getCooldowns().isOnCooldown(this) && context.getClickedFace() == Direction.UP) {
+        if (!level.isClientSide && player != null && !player.getCooldowns().isOnCooldown(this) && context.getClickedFace() == Direction.UP) {
             if (getDaveCount(player) < 1) {
                 CrazyDaveEntity dave = EntityRegister.CRAZY_DAVE.get().create(level);
-                EntityUtil.onEntitySpawn(level, dave, pos.above());
+                if (dave != null) {
+                    EntityUtil.onEntitySpawn(level, dave, pos.above());
+                }
                 itemstack.shrink(1);
             }
         }
@@ -44,7 +45,7 @@ public class DaveToken extends Item {
 
     public int getDaveCount(Player player) {
         int range = 60;
-        long count = EntityUtil.getFriendlyLivings(player, EntityUtil.getEntityAABB(player, range, range)).stream().filter(entity -> entity instanceof AbstractDaveEntity).count();
+        long count = EntityUtil.getFriendlyLivings(player, EntityUtil.getEntityAABB(player, range, range)).stream().filter(entity -> entity instanceof CrazyDaveEntity).count();
         return (int) count;
     }
 
