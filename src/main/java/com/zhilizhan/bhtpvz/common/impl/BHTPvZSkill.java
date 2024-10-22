@@ -15,7 +15,6 @@ public class BHTPvZSkill extends SkillTypes {
     public static final String SKILL_TAG = "paz_skill_tag";
     public static final int COOL_DOWN_LEVEL = 5;
     public static final ISkillType GRASS_CARP_HEAL_SPEED = new SkillType("grass_carp_heal_speed", ArrayUtil.getAverageArray(3, 6.0F, 2.0F), Arrays.asList(5,7));
-    public static final ISkillType GRASS_CARP_HEAL_RANGE = new SkillType("grass_carp_heal_rage", ArrayUtil.getAverageArray(4, 4F, 7F), Arrays.asList(4, 6, 8));
     public static final ISkillType GRASS_CARP_MORE_HEALTH = new SkillType("grass_carp_more_health", ArrayUtil.getAverageArray(3, 30.0F, 50.0F), Arrays.asList(2, 3));
 
     public BHTPvZSkill() {

@@ -27,7 +27,7 @@ public final class BHTPvZPlants extends PlantType {
             .summonCard(() -> BHTPvZItems.GRASS_CARP_CARD.get())
             .enjoyCard(() -> BHTPvZItems.GRASS_CARP_ENJOY_CARD.get())
             .plantModel(() -> GrassCarpModel::new).scale(1.4f)
-            .cdSkill(Arrays.asList(BHTPvZSkill.GRASS_CARP_HEAL_RANGE, BHTPvZSkill.GRASS_CARP_HEAL_SPEED, BHTPvZSkill.GRASS_CARP_MORE_HEALTH)));
+            .cdSkill(Arrays.asList(BHTPvZSkill.GRASS_CARP_HEAL_SPEED, BHTPvZSkill.GRASS_CARP_MORE_HEALTH)));
     public static void register() {
         PVZAPI.get().registerPlantTypes(LIST);
     }

@@ -32,13 +32,17 @@ public class GrassCarpEntity extends PVZPlantEntity {
     }
     private void giveHealToFriendly() {
         float range = this.getEffectRange();
-        EntityUtil.getFriendlyLivings(this, EntityUtil.getEntityAABB(this, range, 2.5F)).forEach((entity) -> {
-           
-            if (entity.getHealth()<entity.getMaxHealth()) {
-                entity.heal(Math.max(1f,entity.getMaxHealth()/20));
-            }
+        EntityUtil.getFriendlyLivings(this, EntityUtil.getEntityAABB(this, range*2, 2.5F)).forEach((entity) -> {
+
             if (entity instanceof GrassCarpEntity && entity!=this) {
                 entity.kill();
+            }
+
+        });
+        EntityUtil.getFriendlyLivings(this, EntityUtil.getEntityAABB(this, range, 2.5F)).forEach((entity) -> {
+
+            if (entity.getHealth()<entity.getMaxHealth()) {
+                entity.heal(Math.min(Math.max(4f,entity.getMaxHealth()/5),20));
             }
 
         });
@@ -49,7 +53,7 @@ public class GrassCarpEntity extends PVZPlantEntity {
     }
 
     public float getEffectRange() {
-        return this.getSkillValue(BHTPvZSkill.GRASS_CARP_HEAL_RANGE);
+        return 16;
     }
     protected float getLife() {
         return this.getSkillValue(BHTPvZSkill.GRASS_CARP_MORE_HEALTH);
