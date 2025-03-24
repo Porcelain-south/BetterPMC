@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bpmc:block/morion_block_m"
+    }
+  }
+}

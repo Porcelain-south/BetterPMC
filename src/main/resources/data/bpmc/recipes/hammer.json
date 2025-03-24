@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " BC",
+    " AB",
+    "A  "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "tag": "minecraft:planks"
+    },
+    "C": {
+      "item": "pvz:origin_ingot"
+    }
+  },
+  "result": {
+    "item": "bpmc:hammer"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "texture": "bpmc:block/origin_mushroom_block"
+  }
+}

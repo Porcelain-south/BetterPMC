@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north":{"model":"bhtpvz:block/water_pot","y":180},
-    "facing=east":{"model":"bhtpvz:block/water_pot","y":270},
-    "facing=south":{"model":"bhtpvz:block/water_pot"},
-    "facing=west":{"model":"bhtpvz:block/water_pot","y":90}
-  }
-}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bpmc:block/dt_starfruit_branch"
+    }
+  }
+}

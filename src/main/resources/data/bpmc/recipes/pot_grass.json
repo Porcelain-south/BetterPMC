@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":[
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+
+  "key": {
+    "A": {
+      "item": "pvz:origin_essence"
+    },
+    "B": {
+      "item": "minecraft:flower_pot"
+    }
+
+  },
+
+  "result": {
+    "item": "bpmc:pot_grass",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "pvz:card_fusion",
+  "ingredients": [
+    {
+      "item": "pvz:cabbage_pult_card"
+    },
+    {
+      "item": "pvz:iceberg_lettuce_card"
+    },
+    {
+      "tag": "pvz:card/blue_cards"
+    }
+  ],
+  "result": {
+    "item": "bpmc:ice_cabbage_pult_card"
+  }
+}

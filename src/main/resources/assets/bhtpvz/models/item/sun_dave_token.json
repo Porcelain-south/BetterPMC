@@ -1,6 +1,0 @@
-{
-	"parent": "item/handheld",
-	"textures": {
-		"layer0": "bhtpvz:item/sun_dave_token"
-	}
-}

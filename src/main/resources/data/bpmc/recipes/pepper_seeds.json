@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pvz:pepper"
+    }
+  ],
+  "result": {
+    "item": "bpmc:chili_seeds",
+    "count":2
+  }
+}

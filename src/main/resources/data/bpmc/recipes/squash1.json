@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "bpmc:squash_slice"
+    }
+  },
+  "result": {
+    "item": "bpmc:squash"
+  }
+}

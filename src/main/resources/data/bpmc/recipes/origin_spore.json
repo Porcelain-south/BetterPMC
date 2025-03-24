@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bpmc:origin_mushroom"
+    }
+  ],
+  "result": {
+    "item": "bpmc:origin_spore"
+  }
+}

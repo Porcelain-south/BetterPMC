@@ -1,0 +1,11 @@
+{
+  "buzzer": {
+    "subtitle": "sound.bpmc.buzzer",
+    "sounds": [
+      {
+        "name": "bpmc:buzzer",
+        "stream": true
+      }
+    ]
+  }
+}

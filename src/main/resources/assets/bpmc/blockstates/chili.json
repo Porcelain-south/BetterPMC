@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "bpmc:block/chili/chili_0"
+    },
+    "age=1": {
+      "model": "bpmc:block/chili/chili_1"
+    },
+    "age=2": {
+      "model": "bpmc:block/chili/chili_2"
+    },
+    "age=3": {
+      "model": "bpmc:block/chili/chili_3"
+    }
+  }
+}

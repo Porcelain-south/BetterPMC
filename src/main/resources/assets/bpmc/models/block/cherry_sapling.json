@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "bpmc:block/cherry_sapling"
+  }
+}

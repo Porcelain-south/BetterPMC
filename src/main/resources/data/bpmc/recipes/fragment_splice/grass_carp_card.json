@@ -1,0 +1,24 @@
+{
+  "type": "pvz:fragment_splice",
+  "pattern": [
+    "AAAAA",
+    "ABBBA",
+    "ABCBA",
+    "ABBBA",
+    "AAAAA"
+  ],
+  "key": {
+    "A": {
+      "item": "pvz:assist_essence"
+    },
+    "B": {
+      "item": "bpmc:grass_carp_enjoy_card"
+    },
+    "C": {
+      "tag": "pvz:card/purple_cards"
+    }
+  },
+  "result": {
+    "item": "bpmc:grass_carp_card"
+  }
+}

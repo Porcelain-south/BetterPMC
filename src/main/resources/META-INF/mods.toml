@@ -1,34 +1,34 @@
 modLoader = "javafml"
 loaderVersion = "[36,)"
 license = "MPL-2.0"
-issueTrackerURL = "https://github.com/zhilizhan/BHTPvZ/issues"
+issueTrackerURL = "https://github.com/Porcelain-south/BetterPMC/issues"
 
 [[mods]]
-modId = "bhtpvz"
-version = "${version}"
-displayName = "${mod_name}"
-authors = "${mod_authors}"
+modId = "bpmc"
+version = "1.1.0"
+displayName = "BetterPMC"
+authors = "SuSen36"
 credits = "\nArtist: GrassCarp, DLlover, Echoes_ACT\nData Pack: 136"
 logoFile = "logo.png"
 description = 'This is an add-on mod about "HTPVZ Mod" version 1.16.5'
 
-[[dependencies.bhtpvz]]
+[[dependencies.bpmc]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[${minecraft_version},)"
+versionRange = "[1.16.5,) "
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.bhtpvz]]
+[[dependencies.bpmc]]
 modId = "forge"
 mandatory = true
-versionRange = "[${forge_version},)"
+versionRange = "[36.2.39,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.bhtpvz]]
+[[dependencies.bpmc]]
 modId = "pvz"
 mandatory = true
-versionRange = "[${pvz_version},)"
+versionRange = "[0.6.3,)"
 ordering = "NONE"
 side = "BOTH"
