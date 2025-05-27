@@ -20,8 +20,7 @@ import java.util.List;
 public final class BHTPvZPlants extends PlantType {
     private static final List<IPlantType> LIST = new ArrayList<>();
 
-  //草鱼
-
+    //草鱼
     public static final IPlantType GRASS_CARP = new BHTPvZPlants("grass_carp", new PlantFeatures()
             .cost(225).requiredLevel(23)
             .cd(CoolDowns.LITTLE_SLOW).rank(RankTypes.PURPLE).essence(EssenceTypes.ASSIST)
@@ -36,7 +35,7 @@ public final class BHTPvZPlants extends PlantType {
 
     //冰卷心菜
     public static final IPlantType ICE_CABBAGE_PULT = new BHTPvZPlants("ice_cabbage_pult", new PlantFeatures()
-            .cost(175).requiredLevel(17)
+            .cost(175).requiredLevel(80)
             .cd(CoolDowns.VERY_FAST).rank(RankTypes.BLUE).essence(EssenceTypes.ICE)
             .entityType(() -> BHTPvZEntityTypes.ICE_CABBAGE_PULT.get())
             .summonCard(() -> BHTPvZItems.ICE_CABBAGE_PULT_CARD.get())
@@ -60,6 +59,6 @@ public final class BHTPvZPlants extends PlantType {
 
     @Override
     public String getCategoryName() {
-        return "bpmc";
+        return "BetterPMC";
     }
 }

@@ -5,7 +5,7 @@ issueTrackerURL = "https://github.com/Porcelain-south/BetterPMC/issues"
 
 [[mods]]
 modId = "bpmc"
-version = "1.2.0"
+version = "1.2.1"
 displayName = "BetterPMC"
 authors = "SuSen36"
 credits = "\nArtist: GrassCarp, DLlover, Echoes_ACT\nData Pack: 136"

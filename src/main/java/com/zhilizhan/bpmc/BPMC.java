@@ -33,7 +33,7 @@ import javax.annotation.Nonnull;
 @Mod(BPMC.MOD_ID)
 @Mod.EventBusSubscriber(modid = BPMC.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BPMC {
-    public static final String MOD_ID = "BetterPMC";
+    public static final String MOD_ID = "bpmc";
 
     // 事件总线
     public BPMC() {
