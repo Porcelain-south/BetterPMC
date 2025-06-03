@@ -6,6 +6,7 @@ import com.hungteen.pvz.utils.enums.Colors;
 import com.mojang.datafixers.util.Pair;
 import com.zhilizhan.bpmc.BPMC;
 import com.zhilizhan.bpmc.common.block.BHTPvZBlocks;
+import com.zhilizhan.bpmc.common.effect.BHTPvZMobEffects;
 import com.zhilizhan.bpmc.common.entity.BHTPvZEntityTypes;
 import com.zhilizhan.bpmc.common.impl.BHTPvZPlants;
 import com.zhilizhan.bpmc.common.item.sapling.WisdomSapling;
@@ -35,7 +36,7 @@ public class BHTPvZItems {
 
     // 食物
     public static final RegistryObject<Item> CHERRY = ITEMS.register("cherry", ()-> new Item(new Item.Properties().tab(BPMC.BHTPVZ).food(new Food.Builder().nutrition(4).saturationMod(0.3F).build()))); // 樱桃
-    public static final RegistryObject<Item> GARLIC = ITEMS.register("garlic", ()-> new Garlic(BHTPvZBlocks.GARLIC.get(), new Item.Properties().tab(BPMC.BHTPVZ).food(new Food.Builder().nutrition(2).saturationMod(0.3F).build()))); // 大蒜
+    public static final RegistryObject<Item> GARLIC = ITEMS.register("garlic", () -> new BlockItem(BHTPvZBlocks.GARLIC.get(), new Item.Properties().tab(BPMC.BHTPVZ).food(new Food.Builder().nutrition(2).saturationMod(0.3F).effect(() -> new EffectInstance(BHTPvZMobEffects.HALITOSIS.get(), 120,0), 1.0F).build())));// 大蒜
     public static final RegistryObject<Item> STARFRUIT = ITEMS.register("starfruit", ()-> new Item(new Item.Properties().tab(BPMC.BHTPVZ).food(new Food.Builder().nutrition(4).saturationMod(0.3F).build()))); // 杨桃
     public static final RegistryObject<Item> ANGEL_STARFRUIT = ITEMS.register("angel_starfruit", ()-> new Item(new Item.Properties().tab(BPMC.BHTPVZ).food(new Food.Builder().nutrition(8).saturationMod(1.2F).effect(new EffectInstance(Effects.REGENERATION, 200, 1), 1.0F).build()))); // 天使杨桃
     public static final RegistryObject<Item> SQUASH_SLICE = ITEMS.register("squash_slice", ()-> new Item(new Item.Properties().tab(BPMC.BHTPVZ).food(new Food.Builder().nutrition(3).saturationMod(0.3F).build()))); //倭瓜片
