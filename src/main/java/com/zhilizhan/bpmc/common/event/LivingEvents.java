@@ -19,6 +19,7 @@ import net.minecraft.item.Item;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.Hand;
 import net.minecraft.util.text.TextFormatting;
+import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
@@ -46,13 +47,13 @@ public class LivingEvents {
 		if (!world.isClientSide) {
             Block block = world.getBlockState(e.getPos()).getBlock();
             if (block instanceof BedBlock) {
-                Integer sleeptime = 15001;//可以入眠的tick时间;
+                Integer sleeptime = 15000;//可以入眠的tick时间;
                 Integer currenttime = (int)world.getDayTime()%24000;
-				if (currenttime <= sleeptime) {//判断是否可以入眠,true为不能入眠
+				if (currenttime.equals(sleeptime)) {//判断是否可以入眠,true为不能入眠
                     e.setCanceled(true);
 					if(e.getPlayer() instanceof ServerPlayerEntity) {
 						((ServerPlayerEntity)player).setRespawnPosition(world.dimension(), e.getPos(), 0.0F, false, true);
-						Utils.sendMessage(player, "还没到睡觉时间", TextFormatting.DARK_GREEN);//失败消息
+						Utils.sendMessage(player, new TranslationTextComponent("message.bpmc.sleep.not_time"), TextFormatting.DARK_GREEN);//失败消息
 					}
 				}
             }

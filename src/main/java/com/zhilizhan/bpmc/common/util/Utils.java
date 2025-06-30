@@ -1,6 +1,7 @@
 package com.zhilizhan.bpmc.common.util;
 
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.server.ServerWorld;
@@ -21,6 +22,13 @@ public class Utils {
             StringTextComponent message = new StringTextComponent(m);
             message.withStyle(colour);
             player.sendMessage(message, player.getUUID());
+        }
+    }
+    public static void sendMessage(PlayerEntity player, ITextComponent message, TextFormatting colour) {
+        if (message != null) {
+            StringTextComponent m = new StringTextComponent(message.getString());
+            m.withStyle(colour);
+            player.sendMessage(m, player.getUUID());
         }
     }
 }

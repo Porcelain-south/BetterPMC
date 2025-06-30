@@ -101,6 +101,7 @@
   "challenge.pvz.roof_extra.name": "屋顶附加",
   "challenge.pvz.grass_add.name": "草坪附加",
   "challenge.pvz.pool_add.name": "泳池附加",
-  "sound.bpmc.buzzer": "挥动锤子声"
+  "sound.bpmc.buzzer": "挥动锤子声",
+  "message.bpmc.sleep.not_time": "还没到睡觉时间"
 
 }

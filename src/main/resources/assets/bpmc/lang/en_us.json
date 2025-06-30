@@ -102,5 +102,6 @@
   "challenge.pvz.pool_add.name": "Pool Add",
 
 
-  "sound.bpmc.buzzer": "Buzzer"
+  "sound.bpmc.buzzer": "Buzzer",
+  "message.bpmc.sleep.not_time": "It's not sleep time yet"
 }

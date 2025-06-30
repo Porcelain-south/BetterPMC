@@ -42,9 +42,10 @@ public class BPMC {
         IEventBus bus2 = MinecraftForge.EVENT_BUS;
 
         BHTPvZEntityTypes.ENTITY_TYPES.register(bus);
+        BHTPvZMobEffects.MOB_EFFECTS.register(bus);
         BHTPvZItems.ITEMS.register(bus);
         BHTPvZBlocks.BLOCKS.register(bus);
-        BHTPvZMobEffects.MOB_EFFECTS.register(bus);
+
         BHTPvZBiomes.BIOMES.register(bus);
         BHTPvZPlants.register();
         BHTPvZSkill.SkillType.register();
