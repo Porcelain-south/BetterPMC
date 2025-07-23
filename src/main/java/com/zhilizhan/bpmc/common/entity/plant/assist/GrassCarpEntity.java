@@ -1,6 +1,7 @@
 package com.zhilizhan.bpmc.common.entity.plant.assist;
 
 import com.hungteen.pvz.api.types.IPlantType;
+import com.hungteen.pvz.common.entity.AbstractPAZEntity;
 import com.hungteen.pvz.common.entity.plant.PVZPlantEntity;
 import com.hungteen.pvz.utils.EntityUtil;
 import com.zhilizhan.bpmc.common.impl.BHTPvZPlants;
@@ -21,8 +22,30 @@ public class GrassCarpEntity extends PVZPlantEntity {
     protected void registerGoals() {
         super.registerGoals();
         this.goalSelector.addGoal(2, new SwimGoal(this));
-      }
+    }
 
+    @Override
+    public void startSuperMode(boolean first) {
+        super.startSuperMode(first);
+        if(!level.isClientSide) {
+            float range = this.getEffectRange();
+            EntityUtil.getFriendlyLivings(this, EntityUtil.getEntityAABB(this, range, 2.5F)).forEach(entity -> {
+                if (entity instanceof AbstractPAZEntity) {
+                    AbstractPAZEntity friendlyPAZEntity = (AbstractPAZEntity) entity;
+                    if(friendlyPAZEntity.getInnerDefenceLife() < this.getSuperDefenceLife())
+                    {
+                        friendlyPAZEntity.setInnerDefenceLife(this.getSuperDefenceLife());
+                    }
+                }
+            });
+        }
+    }
+
+    public float getSuperDefenceLife() {
+        return 50;
+    }
+
+    @Override
     public void normalPlantTick() {
         super.normalPlantTick();
 
@@ -68,4 +91,8 @@ public class GrassCarpEntity extends PVZPlantEntity {
         return BHTPvZPlants.GRASS_CARP;
     }
 
+    @Override
+    public int getSuperTimeLength() {
+        return 20;
+    }
 }
